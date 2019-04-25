@@ -23,9 +23,9 @@ function crawlerPromise(options) {
             console.log(page);
             $('.review').each(function(index) {
                 let review = {
-                    name: $('.a-profile-namlt', this).text().trim(),
+                    name: $('.a-profile-name', this).text().trim(),
                     title: $('.review-title', this).text().trim(),
-                    rate: $('.a-icon-ae', this).text().trim(),
+                    rate: $('.a-icon-alt', this).text().trim(),
                     date: $('.review-date', this).text().trim(),
                     text: $('.review-text', this).text().trim()
                     };
